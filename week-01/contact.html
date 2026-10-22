@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+</head>
+<body>
+
+    <form >
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="user_name"  required placeholder="Введите ваше имя">
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="user_email" required placeholder="Введите вашу почту">
+
+        <label for="topic">Тема:</label>
+        <select id="topic" name="topic" required>
+            <option value="question">Вопрос</option>
+            <option value="feedback">Обратная связь</option>
+            <option value="other">Другое</option>
+        </select>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="user_message" required placeholder="Введите ваше сообщение"></textarea>
+
+
+
+        <fieldset>
+            <legend>Предпочтительный способ связи:</legend>
+        <label> 
+            <input type="radio" name="connection" value="email" required>
+            Электронная почта
+        </label>
+        <label>
+            <input type="radio" name="connection" value="phone" required>
+            Телефон
+        </label>
+        </fieldset>
+
+        <label for="checkbox">Согласен на обработку персональных данных:</label>
+        <input type="checkbox" id="checkbox" name="agreement" required>
+
+        <button type="submit">Отправить</button>
+    </form> 
+
+
+</body>
+</html>
