@@ -6,7 +6,15 @@
     <title>Контакты</title>
 </head>
 <body>
-
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html" >Обо мне</a></li>
+        <li><a href="index.html#skills">Навыки</a></li>
+        <li><a href="index.html#contact">Контакты</a></li>
+        <li><a href="gallery.html" aria-current="page">Галерея</a></li>
+      </ul>
+    </nav>
     <form >
         <label for="name">Имя:</label>
         <input type="text" id="name" name="user_name"  required placeholder="Введите ваше имя">
@@ -16,6 +24,7 @@
 
         <label for="topic">Тема:</label>
         <select id="topic" name="topic" required>
+            <option value="">выберите тему</option>
             <option value="question">Вопрос</option>
             <option value="feedback">Обратная связь</option>
             <option value="other">Другое</option>
